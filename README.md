@@ -35,7 +35,7 @@ Developed as part of an **academic network laboratory project for the Advanced N
   -  Acts as the **core network** of the topology, connects all other subnetworks using OSPF area 0
 ### 🖥️ Subnetwork 1
 - use EIGRP for all 3 routers(routeur 0,1,2) and all interfaces
-- use OSPF only in int se6/0 in router 0
+- use OSPF area1 only in int se6/0 in router 0 
 - router 0 links between OPSF and EIGRP 
 - Contains:
   - **Web Server**
@@ -52,12 +52,14 @@ Developed as part of an **academic network laboratory project for the Advanced N
     ftp <ftp-server-ip>
   ```
 ### 🌐 Subnetwork 2
+- use OSPF area 2
 - Contains:
 - **1 router and 1pc**
 - **DNS Server**
 - DNS server is configured to resolve:
   -  www.abed.com → Web Server IP (Subnetwork 1)
 ### 📡 Subnetwork 3
+- use OPSF area 3
 - Contains:
 - **1 router, 1 switch and 4 pc**
 - **DHCP Server**
@@ -89,11 +91,11 @@ Developed as part of an **academic network laboratory project for the Advanced N
 - Rule:
 - **PC05 is denied access to the Web Server on ports greater than 1000**
 #### 🔍 Testing:
-From **PC01**, try fom command prompt :
- **ping <ip-server-web>**
+- From **PC01**, try fom command prompt :
+ **ping <ip-server-web,>**
 
-From **PC05**, try accessing:
-  **http://<web-server-ip>:1000+**
+- From **PC05**, try accessing:
+  **http://<web-server-ip,>:1000+**
 
 ## 🛠️ Tools & Technologies
 
