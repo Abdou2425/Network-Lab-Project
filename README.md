@@ -24,7 +24,7 @@ Developed as part of an **academic network laboratory project for the Advanced N
   - Subnetwork 1 → **OSPF Area 1**
   - Subnetwork 2 → **OSPF Area 2**
   - Subnetwork 3 → **OSPF Area 3**
-- **EIGRP** is used **only in Subnetwork 0**
+- **EIGRP** is used **only in Subnetwork 1**
 - **Route redistribution** is configured on **Router 0** to link **EIGRP with OSPF**
 
 ---
@@ -34,6 +34,9 @@ Developed as part of an **academic network laboratory project for the Advanced N
   - **3 routers**
   -  Acts as the **core network** of the topology, connects all other subnetworks using OSPF area 0
 ### 🖥️ Subnetwork 1
+- use EIGRP for all 3 routers(routeur 0,1,2) and all interfaces
+- use OSPF only in int se6/0 in router 0
+- router 0 links between OPSF and EIGRP 
 - Contains:
   - **Web Server**
   - **FTP Server**
