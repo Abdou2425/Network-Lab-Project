@@ -1,7 +1,8 @@
 # Network Lab Project
 ![Cisco](https://img.shields.io/badge/Cisco-PacketTracer-blue?style=for-the-badge)
 ![Networking](https://img.shields.io/badge/Networking-Lab-green?style=for-the-badge)
-
+## 📷 Network Topology
+![Network Topology](images/cisco.png)
 ## Overview
 This project is a **network lab designed and implemented using Cisco Packet Tracer**.  
 It demonstrates advanced networking concepts including **routing protocols, DHCP, DNS, FTP, Web services, and extended access control lists (ACLs)**.
